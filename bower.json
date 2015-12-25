@@ -1,0 +1,29 @@
+{
+  "name": "table-color-code",
+  "description": "it adds color to table elements",
+  "version": "0.0.1",
+  "main": "colorCode.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "table",
+    "color",
+    "code"
+  ],
+  "authors": [
+    "olatunde garuba"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/andela-ogaruba/color-code",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.0.8"
+  }
+}
