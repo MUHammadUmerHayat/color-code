@@ -6,6 +6,8 @@ This directive allows you to add colors to your various table data.
 
 - [AngularJS](http://angularjs.org/)
 
+- [Lodash](https://lodash.com/)
+
 ## Prerequisite
 
 1. Install **Karma**, **Grunt** and **Bower**
@@ -22,6 +24,7 @@ If you use a `bower.json` file in your project, you can have Bower save table-co
 This will copy the table-color-code files into your `bower_components` folder, along with its dependencies. Load the script files in your application:
 
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
 <script type="text/javascript" src="bower_components/table-color-code/js/colorCode.js"></script>
 ```
 
