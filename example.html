@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table color code</title>
+</head>
+<body>
+<div ng-app="myApp">
+    <div ng-controller="TableColorCodeCtrl">
+        <h1>Table color code</h1>
+        <table>
+    <thead>
+      <tr>
+        <td>Id</td>
+        <td ng-repeat="header in title_header">{{header}}
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-ng-repeat="data in items">
+        <td>{{$index +1}}</td>
+        <td ng-repeat="header in title_header" color-code column-name="{{header}}" value="{{data[header]}}" table-data="items">{{data[header]}}</td>
+        </tr>
+    </tbody>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+<script type="text/javascript" src="js/colorCode.js"></script>
+<script>
+    var myApp = angular.module( 'myApp', ['tableColor' ] ).controller( "TableColorCodeCtrl", function TableColorCodeCtrl($scope)  {
+                $scope.items = [
+                    {Price: 9.00, Quantity: 5},
+                    {Price: 100.00, Quantity: 10},
+                    {Price: 1.20, Quantity: 20}
+                ];
+                $scope.title_header = ["Price", "Quantity"];
+            }
+    );
+</script>
+</body>
+</html>
